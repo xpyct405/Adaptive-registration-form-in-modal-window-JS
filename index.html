@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Адаптивная форма регистрации в модальном окне JS</title>
+</head>
+
+<body>
+    <h2>Модальное окно регистрации</h2>
+    <button id="registration-btn">Регистрация</button>
+    <div class="modal">
+        <button class="close-btn">&times;</button>
+        <form class="form">
+            <h2>Регистрация</h2>
+            <p>Пожалуйста, заполните поля ниже для создания аккаунта</p>
+            <div>
+                <label for="email">Электронная почта</label>
+                <input type="email" name="email" placeholder="Напишите email" required>
+
+                <label for="pass">Пароль</label>
+                <input type="password" name="pass" placeholder="Напишите пароль" required>
+
+                <label for="pass-repeat">Повторите пароль</label>
+                <input type="password" name="pass-repeat" placeholder="Повторите пароль" required>
+
+                <label><input type="checkbox" name="remember" checked>Запомнить меня</label>
+            </div>
+
+
+            <div class="agree">Создавая аккаунт вы соглашаетесь с <a href="#">нашими правилами</a></div>
+            <div class="btns">
+                <button class="cancel-btn">Отменить</button>
+                <button class="signup-btn">Зарегистироваться</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>

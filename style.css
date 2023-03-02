@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, serif;
+}
+body {
+    background-color: #cecece;
+    padding: 20px;
+}
+#registration-btn {
+    margin: 20px 0;
+    padding: 16px 20px;
+    cursor:pointer;
+    background-color: rgb(58, 233, 58);
+    border-radius: 3px;
+    border:none;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.modal{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(71, 71, 71, 0.8);
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.close-btn:hover {
+    color: red;
+}
+.form{
+    max-width: 540px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 30px 20px 30px 20px;
+    
+}
+.form h2{
+    margin-top: 20px;
+}
+.form p {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+label:not(:last-child){
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input[type=email],
+input[type=password]{
+    width: 100%;
+    margin: 8px 0 16px;
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #ddd;
+    border: none;
+    outline: none;
+}
+
+input[type=email]:focus,
+input[type=password]:focus {
+background-color: rgb(209, 208, 208);
+}
+
+input[type=checkbox] {
+margin: 8px 15px 20px 0;
+}
+.agree{
+    margin-bottom: 20px;
+}
+.btns{
+    display: flex;
+}
+
+.cancel-btn{background-color: red;}
+.signup-btn{background-color: green;}
+.btns button {
+    width: 50%;
+    padding: 16px;
+    border:none;
+    color: #fff;
+    cursor:pointer;
+    font-size: 16px;
+}
+.btns button:hover{
+    opacity: .8;
+}
